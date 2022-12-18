@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="css/overlay-status.css">
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script>
+        // Define colors
+        var light = '#d7d7d7';
+        var yellow = '#fdad01';
+        var red = '#FF0000';
+
+        function executeOverlay() {
+            // Find attached trailer
+            var attachedIndex = 0;
+            $.each(data.TrailerValues, function (index, item) {
+                if (item.Attached) {
+                    attachedIndex = index;
+                    return false;
+                }
+            });
+
+            // wear
+            var trailerWear = data.TrailerValues[attachedIndex].DamageValues.Body.toFixed(2) + ' %';
+            var truckWearTransmission = data.TrailerValues[attachedIndex].DamageValues.Transmission.toFixed(2) + ' %';
+            var truckWearCabin = data.TrailerValues[attachedIndex].DamageValues.Cabin.toFixed(2) + ' %';
+            var truckWearChassis = data.TrailerValues[attachedIndex].DamageValues.Chassis.toFixed(2) + ' %';
+            var truckWearEngine = data.TrailerValues[attachedIndex].DamageValues.Engine.toFixed(2) + ' %';
+            var truckWearWheels = data.TrailerValues[attachedIndex].DamageValues.WheelsAvg.toFixed(2) + ' %';
+
+            // Set rest time
+            var inGameTimespan = new Date(data.CommonValues.NextRestStopTime);
+            var readableTimespan = getReadableTime(inGameTimespan);
+            var realTimespan = getRealTime(inGameTimespan);
+
+            // Fill UI with data
+            $("div.rest-icon").html(readableTimespan + realTimespan);
+            $("div.trailer-wear").html(trailerWear);
+            $("div.truck-wearTransmission").html(truckWearTransmission);
+            $("div.truck-wearCabin").html(truckWearCabin);
+            $("div.truck-wearChassis").html(truckWearChassis);
+            $("div.truck-wearEngine").html(truckWearEngine);
+            $("div.truck-wearWheels").html(truckWearWheels);
+            
+            // Set color for rest time
+            $("div.rest-icon").css({
+                'color': inGameTimespan.getUTCHours() < 2 ? yellow : light
+            });
+            if (inGameTimespan.getUTCHours() === 0) {
+                $("div.rest-icon").css({
+                    'color': red
+                });
+            }
+
+            // Set wear colors
+            setColorByCondition("div.trailer-wear", data.TrailerValues[attachedIndex].DamageValues.Body, 25, 50);
+            setColorByCondition("div.truck-wearTransmission", data.TrailerValues[attachedIndex].DamageValues.Transmission, 25, 50);
+            setColorByCondition("div.truck-wearCabin", data.TrailerValues[attachedIndex].DamageValues.Cabin, 25, 50);
+            setColorByCondition("div.truck-wearChassis", data.TrailerValues[attachedIndex].DamageValues.Chassis, 25, 50);
+            setColorByCondition("div.truck-wearEngine", data.TrailerValues[attachedIndex].DamageValues.Engine, 25, 50);
+            setColorByCondition("div.truck-wearWheels", data.TrailerValues[attachedIndex].DamageValues.WheelsAvg, 25, 50);
+        }
+
+        function getReadableTime(time) {
+            // Yeah, I know w3schools and developer.mozilla.org... but that gives me not what I want, bro!
+
+            var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
+            var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
+            var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
+
+            return days + hours + minutes;
+        }
+
+        function getRealTime(time) {
+            var absMinutes = ((time.getUTCDate() - 1) * 24 * 60) + (time.getUTCHours() * 60) + time.getUTCMinutes();
+
+            if (data.CommonValues.Scale > 0)
+                return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+            return "(" + absMinutes.toFixed() + "m)";
+        }
+
+        function setColorByCondition(className, value, conditionYellow, conditionRed) {
+            $(className).css({
+                'color': value > conditionYellow ? yellow : light
+            });
+            if (value > conditionRed) {
+                $(className).css({
+                    'color': red
+                });
+            } 
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper on-job game-paused game-connected">
+            <div id="box">
+                <div class="rest-icon centerContent"></div>
+                <div class="trailer-wear centerContent"></div>
+                <div class="truck-wearTransmission centerContent"></div>
+                <div class="truck-wearCabin centerContent"></div>
+                <div class="truck-wearChassis centerContent"></div>
+                <div class="truck-wearEngine centerContent"></div>
+                <div class="truck-wearWheels centerContent"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿/*
+    Using some of the same namings as Funbit but no idea how he realized that... :-/
+    You don't need to refenrence this file. These styles are set programmatically.
+    CSS!? Who knows that anyway? KEKW!
+*/
+
+/* visible when game connected */
+.game-connected {
+    visibility: visible; 
+}
+/* hidden when game paused */
+.game-paused {
+    visibility: hidden;
+}
+/* visible when on job */
+.on-job {
+    visibility: visible;
+}
+/* hidden when on train */
+.train {
+    visibility: hidden;
+}
+/* hidden when on ferry */
+.ferry {
+    visibility: hidden;
+}

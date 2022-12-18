@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script>
+        function executeOverlay() {
+            $("td.Game").html(data.Game);
+            $("td.GameVersion").html("v" + data.GameVersion.Major + "." + data.GameVersion.Minor);
+            $("td.TelemetryVersion").html("v" + data.TelemetryVersion.Major + "." + data.TelemetryVersion.Minor);
+            $("td.IsSdkRunning").html(data.SdkActive.toString());
+        }
+    </script>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>Game</th>
+            <th>Game Version</th>
+            <th>Telemetry Version</th>
+            <th>Is SDK Running</th>
+        </tr>
+        <tr>
+            <td class="Game"></td>
+            <td class="GameVersion"></td>
+            <td class="TelemetryVersion"></td>
+            <td class="IsSdkRunning"></td>
+        </tr>
+    </table>
+</body>
+</html>

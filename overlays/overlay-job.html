@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="css/overlay-job.css">
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script>
+        function executeOverlay() {
+            // trailer
+            var trailerMass = (data.JobValues.CargoValues.Mass / 1000.0).toFixed(2) + 't';
+            var trailerName = data.JobValues.CargoValues.Name + ' (' + trailerMass + ')';
+            // navigation
+            var navigationDistance = (data.NavigationValues.NavigationDistance / 1000.0).toFixed(1) + 'km';
+            // job
+            var jobIncome = data.JobValues.Income + '€';
+            var jobSourceCity = data.JobValues.CitySource + ' / ' + data.JobValues.CompanySource;
+            var jobDestinationCity = data.JobValues.CityDestination + ' / ' + data.JobValues.CompanyDestination;
+
+            // Time keeps on slipping...splipping...slipping... into the future!
+            var deliveryTimespan = new Date(data.JobValues.DeliveryTime.Value);
+            var deliveryReadable = getReadableTime(deliveryTimespan);
+            var deliveryRealTimespan = getRealTime(deliveryTimespan);
+
+            var navigationTimespan = new Date(data.NavigationValues.NavigationTime);
+            var etaReadable = getReadableTime(navigationTimespan);
+            var etaRealTimespan = getRealTime(navigationTimespan);
+
+            // Fill UI with data
+            $("div.trailer-name").html(trailerName);
+            $("div.job-income").html(jobIncome);
+            $("div.job-remainingTime").html(deliveryReadable + deliveryRealTimespan);
+            $("div.navigation-estimatedDistance").html(navigationDistance);
+            $("div.etaDiv").html(etaReadable + etaRealTimespan);
+            $("div.job-sourceCity").html(jobSourceCity);
+            $("div.job-destinationCity").html(jobDestinationCity);
+
+            // Do conditional styling
+            $('job-remainingTime').css({
+                'color': data.JobValues.RemainingDeliveryTime.Value < 0 ? '#FF0000' : '#d7d7d7'
+            });
+        }
+
+        function getReadableTime(time) {
+            // Yeah, I know w3schools and developer.mozilla.org... but that gives me not what I want, bro!
+
+            var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
+            var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
+            var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
+
+            return days + hours + minutes;
+        }
+
+        function getRealTime(time) {
+            var absMinutes = ((time.getUTCDate() - 1) * 24 * 60) + (time.getUTCHours() * 60) + time.getUTCMinutes();
+
+            if (data.CommonValues.Scale > 0)
+                return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+            return "(" + absMinutes.toFixed() + "m)";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper on-job game-paused game-connected">
+        <div id="box">
+            <div class="container">
+                <div style="margin-left: 0.75rem;">Cargo</div>
+                <div class="trailer-name"></div>
+            </div>
+            <div class="container">
+                <div>Income</div>
+                <div class="job-income"></div>
+            </div>
+            <div class="container">
+                <div>Deadline</div>
+                <div class="job-remainingTime"></div>
+            </div>
+            <div class="container">
+                <div>Distance</div>
+                <div class="navigation-estimatedDistance"></div>
+            </div>
+            <div class="container">
+                <div>ETA</div>
+                <div class="etaDiv"></div>
+            </div>
+            <div class="container">
+                <div>From</div>
+                <div class="job-sourceCity"></div>
+            </div>
+            <div class="container">
+                <div>To</div>
+                <div class="job-destinationCity"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #858585;
+    font-weight: 700;
+    text-shadow: 0 0 2px black;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wrapper {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(30, 30, 30, 0.4);
+    box-shadow: 0 0 0.5em rgba(30, 30, 30, 1);
+    padding: 2px;
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: 10px;
+}
+
+#box {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 4px;
+    gap: 12px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0.75rem;
+}
+
+.centerContent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rest-icon {
+    background-image: url("../images/rest-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 65px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+    margin-left: 12px;
+    text-align: center;
+}
+
+.trailer-wear {
+    background-image: url("../images/trailer-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 125px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.truck-wearTransmission {
+    background-image: url("../images/cargo-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 55px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.truck-wearCabin {
+    background-image: url("../images/cabin-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 55px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.truck-wearChassis {
+    background-image: url("../images/chassis-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 55px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.truck-wearEngine {
+    background-image: url("../images/engine-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 55px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.truck-wearWheels {
+    background-image: url("../images/tyre-icon.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 55px;
+    box-shadow: inset 0 0 0 200px rgba(0,0,0,.2);
+}
+
+.rest-icon,
+.trailer-wear,
+.truck-wearTransmission,
+.truck-wearCabin,
+.truck-wearChassis,
+.truck-wearEngine,
+.truck-wearWheels {
+    font-size: 14px;
+    color: #d7d7d7;
+}
