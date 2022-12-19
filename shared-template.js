@@ -75,14 +75,14 @@ function execute() {
             updateStatus();
             if (typeof executeOverlay === "function" && data !== undefined) {
                 // This function should be used inside the overlay html to be executed
-                // no ideas if that makes sense to anybody...
+                // no idea if that makes sense to anybody...
                 executeOverlay();
             }
         });
 }
 
 // Set some variables and manipulate styles
-// Honestly! No clue how to this in a proper way...
+// Honestly! No clue how to do this in a proper way...
 function updateStatus() {
     $('.on-job').css({
         'visibility': ''
