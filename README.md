@@ -54,7 +54,7 @@ If you want to create e.g. a **dasboard for ETS2** instead of overlays it might 
 
 ## Setup
 - Download the [SCS-SDK-plugin v.1.12](https://github.com/RenCloud/scs-sdk-plugin/releases/tag/V.1.12https://github.com/RenCloud/scs-sdk-plugin/releases/tag/V.1.12) and copy the `scs-telemetry.dll` into `[...]\SteamLibrary\steamapps\common\Euro Truck Simulator 2\bin\win_x64\plugins`
-- Download this thing from the [Releases]([Releases](https://github.com//dichternebel/scs-telemetry-json-service/releases/latest/)) section and extract it to wherever you want
+- Download this thing from the [Releases](https://github.com//dichternebel/scs-telemetry-json-service/releases/latest/) section and extract it to wherever you want
 - Start the executable and keep it running (it's located to the system tray then)
 
 ## Limitations
