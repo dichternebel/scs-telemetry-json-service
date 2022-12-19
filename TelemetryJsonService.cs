@@ -115,10 +115,13 @@ namespace TelemetryJsonService
                 }
 #if DEBUG
                 // Simple mocking
-                jsonObj.Game = "ETS2";
-                jsonObj.SdkActive = true;
-                jsonObj.Paused = false;
-                jsonObj.SpecialEventsValues.OnJob = true;
+                var mockData = File.OpenText(Path.Combine(baseDir, "../../mock", "data.json")).ReadToEnd();
+                jsonObj = JsonConvert.DeserializeObject<CustomTelemetry>(mockData);
+
+                //jsonObj.Game = "ATS";
+                //jsonObj.SdkActive = false;
+                //jsonObj.Paused = false;
+                //jsonObj.SpecialEventsValues.OnJob = false;
 #endif
                 // Display some data on UI
                 this.BeginInvoke((MethodInvoker)delegate ()

@@ -76,6 +76,7 @@
       <DependentUpon>TelemetryJsonService.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".gitignore" />
+    <None Include="mock\data.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

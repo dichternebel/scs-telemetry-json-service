@@ -1,0 +1,4845 @@
+﻿{
+  "CommonValues": {
+    "GameTime": {
+      "Value": 49496,
+      "Date": "0001-02-04T08:56:00Z"
+    },
+    "NextRestStop": {
+      "Value": 658,
+      "Date": "0001-01-01T10:58:00Z"
+    },
+    "NextRestStopTime": {
+      "Value": 50154,
+      "Date": "0001-02-04T19:54:00Z"
+    },
+    "Scale": 3.0
+  },
+  "ControlValues": {
+    "InputValues": {
+      "Steering": -0.00303654536,
+      "Throttle": 0.0,
+      "Brake": 0.0,
+      "Clutch": 0.0
+    },
+    "GameValues": {
+      "Steering": -0.00303654536,
+      "Throttle": 0.0,
+      "Brake": 0.0,
+      "Clutch": 0.0
+    }
+  },
+  "DllVersion": 12,
+  "Game": "ETS2",
+  "GamePlay": {
+    "FerryEvent": {
+      "PayAmount": 0,
+      "SourceId": "",
+      "SourceName": "",
+      "TargetId": "",
+      "TargetName": ""
+    },
+    "FinedEvent": {
+      "Amount": 0,
+      "Offence": 0
+    },
+    "JobCancelled": {
+      "Penalty": 0,
+      "Finished": {
+        "Value": 49494,
+        "Date": "0001-02-04T08:54:00Z"
+      },
+      "Started": {
+        "Value": 49494,
+        "Date": "0001-02-04T08:54:00Z"
+      }
+    },
+    "JobDelivered": {
+      "AutoLoaded": true,
+      "AutoParked": true,
+      "CargoDamage": 0.0,
+      "DeliveryTime": {
+        "Value": 10,
+        "Date": "0001-01-01T00:10:00Z"
+      },
+      "DistanceKm": 1.0,
+      "EarnedXp": 1,
+      "Revenue": 366,
+      "Finished": {
+        "Value": 49494,
+        "Date": "0001-02-04T08:54:00Z"
+      },
+      "Started": {
+        "Value": 49494,
+        "Date": "0001-02-04T08:54:00Z"
+      },
+      "StartedBackup": {
+        "Value": 49484,
+        "Date": "0001-02-04T08:44:00Z"
+      }
+    },
+    "TollgateEvent": {
+      "PayAmount": 0
+    },
+    "TrainEvent": {
+      "PayAmount": 0,
+      "SourceId": "",
+      "SourceName": "",
+      "TargetId": "",
+      "TargetName": ""
+    },
+    "RefuelEvent": {
+      "Amount": 0.0
+    }
+  },
+  "GameVersion": {
+    "Major": 1,
+    "Minor": 18
+  },
+  "JobValues": {
+    "DeliveryTime": {
+      "Value": 49773,
+      "Date": "0001-02-04T13:33:00Z"
+    },
+    "RemainingDeliveryTime": {
+      "Value": 277,
+      "Date": "0001-01-01T04:37:00Z"
+    },
+    "CargoLoaded": true,
+    "SpecialJob": false,
+    "Market": 2,
+    "PlannedDistanceKm": 95,
+    "CargoValues": {
+      "Mass": 21000.0,
+      "Id": "rye",
+      "Name": "Roggen",
+      "UnitCount": 30,
+      "UnitMass": 700.0,
+      "CargoDamage": 0.0
+    },
+    "CityDestinationId": "luxembourg",
+    "CityDestination": "Luxembourg",
+    "CompanyDestinationId": "lkwlog",
+    "CompanyDestination": "DB Schenker",
+    "CitySourceId": "liege",
+    "CitySource": "Liège",
+    "CompanySourceId": "dans_jardin",
+    "CompanySource": "InVivo",
+    "Income": 1363
+  },
+  "MaxTrailerCount": 10,
+  "MultiplayerTimeOffset": 0,
+  "NavigationValues": {
+    "NavigationDistance": 95835.8359,
+    "NavigationTime": 6545.54932,
+    "SpeedLimit": {
+      "Value": 0.0,
+      "Kph": 0.0,
+      "Mph": 0.0
+    }
+  },
+  "Paused": false,
+  "RenderTimestamp": 611198039,
+  "SdkActive": true,
+  "SimulationTimestamp": 611208884,
+  "SpecialEventsValues": {
+    "OnJob": true,
+    "JobFinished": true,
+    "JobCancelled": false,
+    "JobDelivered": true,
+    "Fined": false,
+    "Tollgate": false,
+    "Ferry": false,
+    "Train": false,
+    "Refuel": false,
+    "RefuelPayed": false
+  },
+  "Substances": [
+    {
+      "Index": 0,
+      "Value": "static"
+    },
+    {
+      "Index": 1,
+      "Value": "road"
+    },
+    {
+      "Index": 2,
+      "Value": "road_snow"
+    },
+    {
+      "Index": 3,
+      "Value": "dirt"
+    },
+    {
+      "Index": 4,
+      "Value": "snow"
+    },
+    {
+      "Index": 5,
+      "Value": "grass"
+    },
+    {
+      "Index": 6,
+      "Value": "road_dirt"
+    },
+    {
+      "Index": 7,
+      "Value": "invis"
+    },
+    {
+      "Index": 8,
+      "Value": "ice"
+    },
+    {
+      "Index": 9,
+      "Value": "metal"
+    },
+    {
+      "Index": 10,
+      "Value": "rubber"
+    },
+    {
+      "Index": 11,
+      "Value": "rumble_stripe"
+    },
+    {
+      "Index": 12,
+      "Value": "plastic"
+    },
+    {
+      "Index": 13,
+      "Value": "glass"
+    },
+    {
+      "Index": 14,
+      "Value": "wood"
+    },
+    {
+      "Index": 15,
+      "Value": "soft"
+    }
+  ],
+  "TelemetryVersion": {
+    "Major": 1,
+    "Minor": 18
+  },
+  "Timestamp": 225357652,
+  "TrailerValues": [
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 5.636076E-06,
+          "Y": -1.70453859E-06,
+          "Z": 0.000125602353
+        },
+        "AngularVelocity": {
+          "X": -7.815713E-05,
+          "Y": 3.879569E-06,
+          "Z": 0.0002036888
+        },
+        "LinearAcceleration": {
+          "X": -0.000394760282,
+          "Y": -0.000348350557,
+          "Z": 0.0001428581
+        },
+        "LinearVelocity": {
+          "X": -0.0007691359,
+          "Y": 0.000229882542,
+          "Z": -0.000172239728
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": true,
+      "BodyType": "silo",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "single",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.998656034,
+        "Z": -3.95862436
+      },
+      "Id": "scs_silo",
+      "LicensePlate": "1-QHC-412",
+      "LicensePlateCountry": "Belgien",
+      "LicensePlateCountryId": "belgium",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": -15576.046524047852,
+          "Y": 71.163825988769531,
+          "Z": -582.89847564697266
+        },
+        "Orientation": {
+          "Heading": 0.406238377,
+          "Pitch": -0.000712844,
+          "Roll": 7.209644E-07
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 6,
+        "Radius": [
+          0.4977928,
+          0.4977928,
+          0.4977928,
+          0.4977928,
+          0.4977928,
+          0.4977928,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": -0.9071113,
+            "Y": 0.506,
+            "Z": 2.02094388
+          },
+          {
+            "X": 0.9071113,
+            "Y": 0.506,
+            "Z": 2.02094388
+          },
+          {
+            "X": -0.9071113,
+            "Y": 0.506,
+            "Z": 3.3228693
+          },
+          {
+            "X": 0.9071113,
+            "Y": 0.506,
+            "Z": 3.3228693
+          },
+          {
+            "X": -0.9,
+            "Y": 0.506,
+            "Z": 4.62479448
+          },
+          {
+            "X": 0.9,
+            "Y": 0.506,
+            "Z": 4.62479448
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.997833431,
+          0.942356467,
+          0.887361765,
+          0.831871,
+          0.7756115,
+          0.7201339,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.00631098729,
+          0.006308756,
+          0.0004721689,
+          0.0004623127,
+          -0.005359254,
+          -0.00536905276,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          -3.738449E-05,
+          -2.32620587E-05,
+          -3.405973E-05,
+          -2.24721171E-05,
+          -3.732927E-05,
+          -2.3317536E-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "AngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CabinAngularVelocity": null,
+        "CabinAngularAcceleration": null
+      },
+      "Attached": false,
+      "BodyType": "",
+      "Brand": "",
+      "BrandId": "",
+      "CargoAccessoryId": "",
+      "ChainType": "",
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Id": "",
+      "LicensePlate": "",
+      "LicensePlateCountry": "",
+      "LicensePlateCountryId": "",
+      "Name": "",
+      "Position": {
+        "position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": 0.0,
+          "Roll": 0.0
+        },
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WheelsConstant": {
+        "Count": 0,
+        "Radius": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ]
+      },
+      "Wheelvalues": {
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "TruckValues": {
+    "ConstantsValues": {
+      "MotorValues": {
+        "ForwardGearCount": 12,
+        "ReverseGearCount": 2,
+        "RetarderStepCount": 0,
+        "SelectorCount": 1,
+        "SlotGear": [
+          0,
+          0,
+          -1,
+          -2,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          5,
+          6,
+          5,
+          6,
+          7,
+          8,
+          7,
+          8,
+          9,
+          10,
+          9,
+          10,
+          11,
+          12,
+          11,
+          12
+        ],
+        "SlotHandlePosition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7,
+          7
+        ],
+        "SlotSelectors": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "EngineRpmMax": 2500.0,
+        "DifferentialRation": 2.71,
+        "GearRatiosForward": [
+          15.86,
+          12.33,
+          9.57,
+          7.44,
+          5.87,
+          4.57,
+          3.47,
+          2.7,
+          2.1,
+          1.63,
+          1.29,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "GearRatiosReverse": [
+          -14.68,
+          -11.41,
+          -4.02,
+          -3.16,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ShifterTypeValue": 2,
+        "GearValues": null,
+        "BrakeValues": null
+      },
+      "CapacityValues": {
+        "Fuel": 1250.0,
+        "AdBlue": 80.0
+      },
+      "WarningFactorValues": {
+        "Fuel": 0.15,
+        "AdBlue": 0.15,
+        "AirPressure": 69.6,
+        "AirPressureEmergency": 34.8,
+        "OilPressure": 10.15,
+        "WaterTemperature": 105.0,
+        "BatteryVoltage": 23.76
+      },
+      "WheelsValues": {
+        "Count": 4,
+        "Radius": [
+          0.506,
+          0.506,
+          0.506,
+          0.506,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Simulated": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Powered": [
+          false,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Liftable": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "Steerable": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "PositionValues": [
+          {
+            "X": -1.07,
+            "Y": 0.50183,
+            "Z": -1.56479013
+          },
+          {
+            "X": 1.07,
+            "Y": 0.50183,
+            "Z": -1.56479013
+          },
+          {
+            "X": -1.0,
+            "Y": 0.50183,
+            "Z": 2.24432588
+          },
+          {
+            "X": 1.0,
+            "Y": 0.50183,
+            "Z": 2.24432588
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ],
+        "Substance": null,
+        "SuspDeflection": null,
+        "Velocity": null,
+        "Steering": null,
+        "Rotation": null,
+        "Lift": null,
+        "LiftOffset": null,
+        "OnGround": null
+      },
+      "BrandId": "man",
+      "Brand": "MAN",
+      "Id": "vehicle.man.tgx",
+      "Name": "TGX",
+      "LicensePlate": "1-IZN-378",
+      "LicensePlateCountryId": "belgium",
+      "LicensePlateCountry": "Belgien"
+    },
+    "CurrentValues": {
+      "ElectricEnabled": false,
+      "EngineEnabled": false,
+      "DifferentialLock": false,
+      "LiftAxle": false,
+      "LiftAxleIndicator": false,
+      "TrailerLiftAxle": false,
+      "TrailerLiftAxleIndicator": false,
+      "MotorValues": {
+        "ForwardGearCount": 0,
+        "ReverseGearCount": 0,
+        "RetarderStepCount": 0,
+        "SelectorCount": 0,
+        "SlotGear": null,
+        "SlotHandlePosition": null,
+        "SlotSelectors": null,
+        "EngineRpmMax": 0.0,
+        "DifferentialRation": 0.0,
+        "GearRatiosForward": null,
+        "GearRatiosReverse": null,
+        "ShifterTypeValue": 0,
+        "GearValues": {
+          "HShifterSlot": 0,
+          "Selected": 0,
+          "HShifterSelector": [
+            false,
+            false
+          ]
+        },
+        "BrakeValues": {
+          "RetarderLevel": 0,
+          "AirPressure": 134.705,
+          "Temperature": 21.7343464,
+          "ParkingBrake": false,
+          "MotorBrake": false
+        }
+      },
+      "DashboardValues": {
+        "FuelValue": {
+          "Amount": 925.666443,
+          "AverageConsumption": 0.0,
+          "Range": 2350.325
+        },
+        "WarningValues": {
+          "AirPressure": false,
+          "AirPressureEmergency": false,
+          "FuelW": false,
+          "AdBlue": false,
+          "OilPressure": true,
+          "WaterTemperature": false,
+          "BatteryVoltage": true
+        },
+        "GearDashboards": 0,
+        "Speed": {
+          "Value": 0.00198614481,
+          "Kph": 0.007150121,
+          "Mph": 0.00446882565
+        },
+        "CruiseControlSpeed": {
+          "Value": 0.0,
+          "Kph": 0.0,
+          "Mph": 0.0
+        },
+        "AdBlue": 63.78332,
+        "OilPressure": 0.0,
+        "OilTemperature": 22.0806236,
+        "WaterTemperature": 22.07805,
+        "BatteryVoltage": 27.1199989,
+        "RPM": 0.0,
+        "Odometer": 777360.0,
+        "Wipers": false,
+        "CruiseControl": false
+      },
+      "LightsValues": {
+        "AuxFront": 0,
+        "AuxRoof": 0,
+        "DashboardBacklight": 1.0,
+        "BlinkerLeftActive": false,
+        "BlinkerLeftOn": false,
+        "BlinkerRightActive": false,
+        "BlinkerRightOn": false,
+        "Parking": false,
+        "BeamLow": false,
+        "BeamHigh": false,
+        "Beacon": false,
+        "Brake": false,
+        "Reverse": false,
+        "HazardWarningLights": false
+      },
+      "WheelsValues": {
+        "Count": 0,
+        "Radius": null,
+        "Simulated": null,
+        "Powered": null,
+        "Liftable": null,
+        "Steerable": null,
+        "PositionValues": null,
+        "Substance": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "SuspDeflection": [
+          0.000231826314,
+          0.000243806848,
+          -0.001006692,
+          -0.0009951105,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Velocity": [
+          2.99008752E-05,
+          3.46572851E-05,
+          3.059515E-05,
+          3.33274074E-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Steering": [
+          -0.000318955717,
+          -0.000322098349,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Rotation": [
+          0.00221874658,
+          0.9466566,
+          0.890770555,
+          0.8352134,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lift": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "LiftOffset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "OnGround": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "DamageValues": {
+        "Body": 0.0,
+        "Cargo": 0.0,
+        "Chassis": 0.0,
+        "Wheels": 0.0,
+        "Engine": 0.0,
+        "Transmission": 0.0,
+        "Cabin": 0.0,
+        "WheelsAvg": 0.0
+      },
+      "AccelerationValues": {
+        "AngularAcceleration": {
+          "X": 2.18232744E-05,
+          "Y": 4.75001571E-06,
+          "Z": 8.891737E-05
+        },
+        "AngularVelocity": {
+          "X": -6.629601E-05,
+          "Y": 1.13189856E-06,
+          "Z": 0.00047740867
+        },
+        "LinearAcceleration": {
+          "X": 1.48279651E-05,
+          "Y": 0.000105936124,
+          "Z": 4.600644E-05
+        },
+        "LinearVelocity": {
+          "X": 0.000583835645,
+          "Y": 0.000134446935,
+          "Z": -1.86155412E-05
+        },
+        "CabinAngularVelocity": {
+          "X": 9.785045E-06,
+          "Y": 2.12413988E-06,
+          "Z": -9.970475E-05
+        },
+        "CabinAngularAcceleration": {
+          "X": -0.00134900329,
+          "Y": 4.332919E-06,
+          "Z": 6.127785E-05
+        }
+      },
+      "PositionValue": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "Positioning": {
+      "Cabin": {
+        "X": 0.0,
+        "Y": 1.38801479,
+        "Z": -2.30068016
+      },
+      "Head": {
+        "X": -0.795116067,
+        "Y": 1.41227627,
+        "Z": 0.512213469
+      },
+      "Hook": {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 1.70802212
+      },
+      "HeadOffset": {
+        "Position": {
+          "position": null,
+          "Orientation": null,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -0.04
+        },
+        "Orientation": {
+          "Heading": 0.0,
+          "Pitch": -0.0138888853,
+          "Roll": 0.0
+        }
+      },
+      "CabinOffset": {
+        "Position": {
+          "position": null,
+          "Orientation": null,
+          "X": -0.000130495857,
+          "Y": 1.43051147E-06,
+          "Z": 0.0110406876
+        },
+        "Orientation": {
+          "Heading": 2.085069E-07,
+          "Pitch": 9.48637364E-07,
+          "Roll": -1.51781975E-07
+        }
+      },
+      "HeadPositionInCabinSpace": {
+        "X": -0.795116067,
+        "Y": 1.41227627,
+        "Z": 0.472213477
+      },
+      "HeadPositionInVehicleSpace": {
+        "X": -0.7952446,
+        "Y": 2.80029058,
+        "Z": -1.81741655
+      },
+      "HeadPositionInWorldSpace": {
+        "X": -15579.550495326519,
+        "Y": 73.991922616958618,
+        "Z": -576.22416865825653
+      },
+      "CabinPositionInWorlSpace": {
+        "X": -15580.479969739914,
+        "Y": 72.579504489898682,
+        "Z": -576.26457619667053
+      },
+      "HookPositionInWorldSpace": {
+        "X": -15578.252497792244,
+        "Y": 72.1926337480545,
+        "Z": -579.59758532047272
+      }
+    }
+  }
+}

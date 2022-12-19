@@ -28,9 +28,9 @@
             var truckWearWheels = data.TrailerValues[attachedIndex].DamageValues.WheelsAvg.toFixed(2) + ' %';
 
             // Set rest time
-            var inGameTimespan = new Date(data.CommonValues.NextRestStopTime);
-            var readableTimespan = getReadableTime(inGameTimespan);
-            var realTimespan = getRealTime(inGameTimespan);
+            var nextRestDate = new Date(data.CommonValues.NextRestStop.Date);
+            var readableTimespan = getReadableTime(nextRestDate);
+            var realTimespan = getRealTime(data.CommonValues.NextRestStop.Value);
 
             // Fill UI with data
             $("div.rest-icon").html(readableTimespan + realTimespan);
@@ -43,9 +43,9 @@
             
             // Set color for rest time
             $("div.rest-icon").css({
-                'color': inGameTimespan.getUTCHours() < 2 ? yellow : light
+                'color': nextRestDate.getUTCHours() < 2 ? yellow : light
             });
-            if (inGameTimespan.getUTCHours() === 0) {
+            if (nextRestDate.getUTCHours() === 0) {
                 $("div.rest-icon").css({
                     'color': red
                 });
@@ -70,12 +70,10 @@
             return days + hours + minutes;
         }
 
-        function getRealTime(time) {
-            var absMinutes = ((time.getUTCDate() - 1) * 24 * 60) + (time.getUTCHours() * 60) + time.getUTCMinutes();
-
-            if (data.CommonValues.Scale > 0)
-                return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
-            return "(" + absMinutes.toFixed() + "m)";
+        function getRealTime(absMinutes) {
+            //if (data.CommonValues.Scale > 0)
+            //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+            return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
         }
 
         function setColorByCondition(className, value, conditionYellow, conditionRed) {

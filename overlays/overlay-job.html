@@ -16,13 +16,15 @@
             var jobDestinationCity = data.JobValues.CityDestination + ' / ' + data.JobValues.CompanyDestination;
 
             // Time keeps on slipping...splipping...slipping... into the future!
-            var deliveryTimespan = new Date(data.JobValues.DeliveryTime.Value);
-            var deliveryReadable = getReadableTime(deliveryTimespan);
-            var deliveryRealTimespan = getRealTime(deliveryTimespan);
+            var deliveryDate = new Date(data.JobValues.RemainingDeliveryTime.Date);
+            var deliveryReadable = getReadableTime(deliveryDate);
+            var deliveryMinutes = data.JobValues.RemainingDeliveryTime.Value;
+            var deliveryRealTimespan = getRealTime(deliveryMinutes);
 
-            var navigationTimespan = new Date(data.NavigationValues.NavigationTime);
+            var navigationTimespan = new Date(data.NavigationValues.NavigationTime * 1000);
             var etaReadable = getReadableTime(navigationTimespan);
-            var etaRealTimespan = getRealTime(navigationTimespan);
+            var navigationMinutes = data.NavigationValues.NavigationTime / 60;
+            var etaRealTimespan = getRealTime(navigationMinutes);
 
             // Fill UI with data
             $("div.trailer-name").html(trailerName);
@@ -49,12 +51,10 @@
             return days + hours + minutes;
         }
 
-        function getRealTime(time) {
-            var absMinutes = ((time.getUTCDate() - 1) * 24 * 60) + (time.getUTCHours() * 60) + time.getUTCMinutes();
-
-            if (data.CommonValues.Scale > 0)
-                return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
-            return "(" + absMinutes.toFixed() + "m)";
+        function getRealTime(absMinutes) {
+            //if (data.CommonValues.Scale > 0)
+            //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+            return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
         }
     </script>
 </head>
