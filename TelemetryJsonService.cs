@@ -20,54 +20,43 @@ namespace TelemetryJsonService
         public TelemetryJsonService()
         {
             baseDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-
             InitializeComponent();
+            try
+            {
+                this.InitializeTelemetry();
+                DataService.StartWebServer();
+                this.UpdateSharedJs();
 
-            this.WindowState = FormWindowState.Minimized;
-            this.ShowInTaskbar = false;
-
-            // moved here in order to start app minimized to system tray properly
-            this.Resize += new System.EventHandler(this.Form_Resize);
-            this.FormClosing += new FormClosingEventHandler(this.FormClosing_TelemetryHtmlOverlay);
-
-            DataService.StartWebServer();
-            this.InitializeTelemetry();
-
-            this.tbUrl.Text = $"http://localhost:{DataService.Port}/";
-
-            UpdateSharedJs();
+                this.tbUrl.Text = $"http://localhost:{DataService.Port}/";
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
-        private void FormClosing_TelemetryHtmlOverlay(object sender, FormClosingEventArgs e)
+        private void Form_Closing(object sender, FormClosingEventArgs e)
         {
-            //Telemetry.pause();
-            //if (MessageBox.Show("Are you really sure?", "Shutdown Telemetry Json Service", MessageBoxButtons.YesNo) ==
-            //    DialogResult.No)
-            //{
-            //    e.Cancel = true;
-            //    Telemetry.resume();
-            //    return;
-            //}
             Telemetry.Dispose();
         }
 
         private void Form_Resize(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                notifyIcon1.Visible = true;
-            }
-            else if (this.WindowState == FormWindowState.Normal)
-            {
-                notifyIcon1.Visible = false;
-            }
+            this.ShowInTaskbar = this.WindowState != FormWindowState.Minimized;
+            this.notifyIcon1.Visible = !this.ShowInTaskbar;
         }
 
         private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
         {
-            Show();
-            this.WindowState = FormWindowState.Normal;
+            if (e.Button == MouseButtons.Left)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         /// <summary>
@@ -147,11 +136,12 @@ namespace TelemetryJsonService
                 // write to file to be able find data objects easily
                 File.WriteAllText(Path.Combine(baseDir, "overlays", "data.json"), jsonData);
                 DataService.JsonData = jsonData;
+
                 Telemetry.resume();
             }
             catch (Exception ex)
             {
-                // Console.WriteLine("Telemetry was closed: " + ex);
+                Console.WriteLine("Telemetry was closed: " + ex);
             }
         }
 
