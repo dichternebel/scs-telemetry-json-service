@@ -2,7 +2,7 @@
 This small application can be used to get the telemetry data from both [SCS](https://www.scssoft.com/) games ETS2 and ATS in JSON format by using this application's embedded API.
 You can get the data by calling http://localhost:6969/ directly from your browser or whatever app you want to use.
 
-The data comes more or less raw from the SCS SDK and looks like this:
+The data comes more or less raw from the SCS SDK and looks like [this](https://github.com/dichternebel/scs-telemetry-json-service/blob/main/mock/data.json):
 ```json
 {
   "CommonValues": {
@@ -47,7 +47,7 @@ That said, you might just grab this in order to get OBS overlays for ETS2 and us
 ## Intention
 Use this for grabbing JSON telemetry data and for creating e.g. **HTML overlays for OBS**. Feel free to use the included overlays as a starting point or create your own fancy stuff if you are more into modern HTML than I am.
 
-If you want to create e.g. a **dasboard for ETS2** instead of overlays it might be easier to start with [Kniffen's Node module](https://github.com/kniffen/TruckSim-Telemetry). 
+If you want to create e.g. a **dasboard for ETS2** instead of overlays it might be easier to start with [Kniffen's Node module](https://github.com/kniffen/TruckSim-Telemetry) or the [Eurotruck Simulator 2 Dashboard skin](https://github.com/JAGFx/ets2-dashboard-skin) by JAGFx. 
 
 ## Prerequisites
 - [.Net 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) (should be already there if using Win10/11)
