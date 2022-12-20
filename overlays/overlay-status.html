@@ -4,11 +4,6 @@
     <script src="js/jquery-3.6.2.min.js"></script>
     <script src="js/shared.js"></script>
     <script>
-        // Define colors
-        var light = '#d7d7d7';
-        var yellow = '#fdad01';
-        var red = '#FF0000';
-
         function executeOverlay() {
             // Find attached trailer
             var attachedIndex = 0;
@@ -29,11 +24,11 @@
 
             // Set rest time
             var nextRestDate = new Date(data.CommonValues.NextRestStop.Date);
-            var readableTimespan = getReadableTime(nextRestDate);
-            var realTimespan = getRealTime(data.CommonValues.NextRestStop.Value);
+            var readableRestTime = getReadableTime(nextRestDate);
+            var realMinutes = getRealMinutes(data.CommonValues.NextRestStop.Value);
 
             // Fill UI with data
-            $("div.rest-icon").html(readableTimespan + realTimespan);
+            $("div.rest-icon").html(readableRestTime + realMinutes);
             $("div.trailer-wear").html(trailerWear);
             $("div.truck-wearTransmission").html(truckWearTransmission);
             $("div.truck-wearCabin").html(truckWearCabin);
@@ -43,11 +38,11 @@
             
             // Set color for rest time
             $("div.rest-icon").css({
-                'color': nextRestDate.getUTCHours() < 2 ? yellow : light
+                'color': nextRestDate.getUTCHours() < 2 ? colorScsYellow : colorScsLight
             });
             if (nextRestDate.getUTCHours() === 0) {
                 $("div.rest-icon").css({
-                    'color': red
+                    'color': colorRed
                 });
             }
 
@@ -60,29 +55,13 @@
             setColorByCondition("div.truck-wearWheels", data.TrailerValues[attachedIndex].DamageValues.WheelsAvg, 25, 50);
         }
 
-        function getReadableTime(time) {
-            // Yeah, I know w3schools and developer.mozilla.org... but that gives me not what I want, bro!
-
-            var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
-            var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
-            var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
-
-            return days + hours + minutes;
-        }
-
-        function getRealTime(absMinutes) {
-            //if (data.CommonValues.Scale > 0)
-            //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
-            return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
-        }
-
         function setColorByCondition(className, value, conditionYellow, conditionRed) {
             $(className).css({
-                'color': value > conditionYellow ? yellow : light
+                'color': value > conditionYellow ? colorScsYellow : colorScsLight
             });
             if (value > conditionRed) {
                 $(className).css({
-                    'color': red
+                    'color': colorRed
                 });
             } 
         }

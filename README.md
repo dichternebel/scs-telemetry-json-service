@@ -7,33 +7,35 @@ The data comes more or less raw from the SCS SDK and looks like [this](https://g
 {
   "CommonValues": {
     "GameTime": {
-      "Value": 0,
-      "Date": "0001-01-01T00:00:00Z"
+      "Value": 49496,
+      "Date": "0001-02-04T08:56:00Z"
     },
     "NextRestStop": {
-      "Value": 0,
-      "Date": "0001-01-01T00:00:00Z"
+      "Value": 658,
+      "Date": "0001-01-01T10:58:00Z"
     },
     "NextRestStopTime": {
-      "Value": 0,
-      "Date": "0001-01-01T00:00:00Z"
+      "Value": 50154,
+      "Date": "0001-02-04T19:54:00Z"
     },
-    "Scale": 0.0
+    "Scale": 3.0
   },
   "ControlValues": {
     "InputValues": {
-      "Steering": 0.0,
+      "Steering": -0.00303654536,
       "Throttle": 0.0,
       "Brake": 0.0,
       "Clutch": 0.0
     },
     "GameValues": {
-      "Steering": 0.0,
+      "Steering": -0.00303654536,
       "Throttle": 0.0,
       "Brake": 0.0,
       "Clutch": 0.0
     }
-  }
+  },
+  "DllVersion": 12,
+  "Game": "ETS2",
   [...]
 }
 ```
@@ -42,12 +44,13 @@ The data comes more or less raw from the SCS SDK and looks like [this](https://g
 The main use case for creating this thing was to _save_ my [custom OBS overlays](https://github.com/dichternebel/ets2-telemetry-overlay) I created for [Funbit's Telemetry Server](https://github.com/funbit/ets2-telemetry-server/). Unfortunately, that project seems to be no longer maintained and it's not working anymore with the current ETS2 version.
 
 That said, you might just grab this in order to get OBS overlays for ETS2 and use it for your stream:
-![Screenshot of OBS overlays](assets/ets2_job_and_status_overlay.jpg "Screenshot of OBS overlays")
+
+![Screenshot of OBS overlays](assets/screenshot_overlay_ingame.jpg "Screenshot of OBS overlays")
 
 ## Intention
 Use this for grabbing JSON telemetry data and for creating e.g. **HTML overlays for OBS**. Feel free to use the included overlays as a starting point or create your own fancy stuff if you are more into modern HTML than I am.
 
-If you want to create e.g. a **dasboard for ETS2** instead of overlays it might be easier to start with [Kniffen's Node module](https://github.com/kniffen/TruckSim-Telemetry) or the [Eurotruck Simulator 2 Dashboard skin](https://github.com/JAGFx/ets2-dashboard-skin) by JAGFx. 
+If you want to create e.g. a **dashboard for ETS2** instead of overlays it might be easier to start with [Kniffen's Node module](https://github.com/kniffen/TruckSim-Telemetry) or the [Eurotruck Simulator 2 Dashboard skin](https://github.com/JAGFx/ets2-dashboard-skin) by JAGFx. 
 
 ## Prerequisites
 - [.Net 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) (should be already there if using Win10/11)

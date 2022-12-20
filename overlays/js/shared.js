@@ -6,6 +6,12 @@
 // https://www.youtube.com/watch?v=Uo3cL4nrGOk
 //
 
+// Define colors
+var colorScsLight = '#d7d7d7';
+var colorScsYellow = '#fdad01';
+var colorRed = '#FF0000';
+
+// Prepare polling vars
 var pollingInterval;
 var timer = 1000;
 var retryCounter = 0;
@@ -79,6 +85,21 @@ function execute() {
                 executeOverlay();
             }
         });
+}
+
+// Some helper functions
+function getReadableTime(time) {
+    var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
+    var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
+    var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
+
+    return days + hours + minutes;
+}
+
+function getRealMinutes(absMinutes) {
+    //if (data.CommonValues.Scale > 0 && absMinutes < 10)
+    //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+    return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
 }
 
 // Set some variables and manipulate styles

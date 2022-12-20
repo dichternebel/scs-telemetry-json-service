@@ -19,42 +19,26 @@
             var deliveryDate = new Date(data.JobValues.RemainingDeliveryTime.Date);
             var deliveryReadable = getReadableTime(deliveryDate);
             var deliveryMinutes = data.JobValues.RemainingDeliveryTime.Value;
-            var deliveryRealTimespan = getRealTime(deliveryMinutes);
+            var deliveryRealMinutes = getRealMinutes(deliveryMinutes);
 
             var navigationTimespan = new Date(data.NavigationValues.NavigationTime * 1000);
             var etaReadable = getReadableTime(navigationTimespan);
             var navigationMinutes = data.NavigationValues.NavigationTime / 60;
-            var etaRealTimespan = getRealTime(navigationMinutes);
+            var etaRealMinutes = getRealMinutes(navigationMinutes);
 
             // Fill UI with data
             $("div.trailer-name").html(trailerName);
             $("div.job-income").html(jobIncome);
-            $("div.job-remainingTime").html(deliveryReadable + deliveryRealTimespan);
+            $("div.job-remainingTime").html(deliveryReadable + deliveryRealMinutes);
             $("div.navigation-estimatedDistance").html(navigationDistance);
-            $("div.etaDiv").html(etaReadable + etaRealTimespan);
+            $("div.etaDiv").html(etaReadable + etaRealMinutes);
             $("div.job-sourceCity").html(jobSourceCity);
             $("div.job-destinationCity").html(jobDestinationCity);
 
-            // Do conditional styling
+            // Do conditional coloring
             $('job-remainingTime').css({
-                'color': data.JobValues.RemainingDeliveryTime.Value < 0 ? '#FF0000' : '#d7d7d7'
+                'color': data.JobValues.RemainingDeliveryTime.Value < 0 ? colorRed : colorScsLight
             });
-        }
-
-        function getReadableTime(time) {
-            // Yeah, I know w3schools and developer.mozilla.org... but that gives me not what I want, bro!
-
-            var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
-            var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
-            var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
-
-            return days + hours + minutes;
-        }
-
-        function getRealTime(absMinutes) {
-            //if (data.CommonValues.Scale > 0)
-            //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
-            return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
         }
     </script>
 </head>
