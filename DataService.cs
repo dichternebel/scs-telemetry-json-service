@@ -18,7 +18,6 @@ namespace TelemetryJsonService
 
         public static string Address { get; private set; }
         public static int Port { get; private set; }
-
         public static string JsonData { get; set; }
 
         public static void StartWebServer()
@@ -27,7 +26,7 @@ namespace TelemetryJsonService
 
             Address = ConfigurationManager.AppSettings["address"];
             Port = int.Parse(ConfigurationManager.AppSettings["port"]);
-            Listener = new HttpListener { Prefixes = { $"http://{address}:{Port}/" } };
+            Listener = new HttpListener { Prefixes = { $"http://{Address}:{Port}/" } };
             _mainLoop = MainLoop();
         }
 
