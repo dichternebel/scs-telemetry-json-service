@@ -27,7 +27,7 @@ namespace TelemetryJsonService
                 DataService.StartWebServer();
                 this.UpdateSharedJs();
 
-                this.tbUrl.Text = $"http://localhost:{DataService.Port}/";
+                this.tbUrl.Text = $"http://{DataService.Address}:{DataService.Port}/";
             }
             catch (Exception ex)
             {
@@ -74,6 +74,7 @@ namespace TelemetryJsonService
                 resourceContent = reader.ReadToEnd();
             }
 
+            resourceContent = resourceContent.Replace("{{address}}", DataService.Address);
             resourceContent = resourceContent.Replace("{{port}}", DataService.Port.ToString());
             File.WriteAllText(Path.Combine(baseDir, "overlays/js", "shared.js"), resourceContent);
         }

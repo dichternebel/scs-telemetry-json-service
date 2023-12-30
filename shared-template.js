@@ -7,9 +7,9 @@
 //
 
 // Define colors
-var colorScsLight = '#d7d7d7';
-var colorScsYellow = '#fdad01';
-var colorRed = '#FF0000';
+var colorScsLight = "#d7d7d7";
+var colorScsYellow = "#fdad01";
+var colorRed = "#FF0000";
 
 // Prepare polling vars
 var pollingInterval;
@@ -28,146 +28,142 @@ var train = false;
 var ferry = false;
 
 $(function () {
-    console.log("Document ready!");
-    setPollingInterval();
+  console.log("Document ready!");
+  setPollingInterval();
 });
 
 function setPollingInterval() {
-    clearInterval(pollingInterval);
-    pollingInterval = setInterval(function () {
-        execute();
-    }, timer);
+  clearInterval(pollingInterval);
+  pollingInterval = setInterval(function () {
+    execute();
+  }, timer);
 }
 
 // Slow down polling interval when connection is lost
 function checkPollingInterval() {
-    if (retryCounter === 10 && timer === 100) {
-        isServiceConnected = false;
-        console.log("Too many connection errors: changing interval to 1sec...");
-        timer = 1000;
-        setPollingInterval();
-    }
-    if (retryCounter === 19 && timer === 1000) {
-        console.log("Too many connection errors: changing interval to 10secs and hiding '.game-connected'...");
-        timer = 10000;
-        setPollingInterval();
+  if (retryCounter === 10 && timer === 100) {
+    isServiceConnected = false;
+    console.log("Too many connection errors: changing interval to 1sec...");
+    timer = 1000;
+    setPollingInterval();
+  }
+  if (retryCounter === 19 && timer === 1000) {
+    console.log(
+      "Too many connection errors: changing interval to 10secs and hiding '.game-connected'...",
+    );
+    timer = 10000;
+    setPollingInterval();
 
-        $('.game-connected').css({
-            'visibility': 'hidden'
-        });
-    }
-    else if (retryCounter === 0 && timer > 100) {
-        isServiceConnected = true;
-        console.log("We are back to business! Changing interval to 100ms...");
-        timer = 100;
-        setPollingInterval();
-    }
+    $(".game-connected").css({
+      visibility: "hidden",
+    });
+  } else if (retryCounter === 0 && timer > 100) {
+    isServiceConnected = true;
+    console.log("We are back to business! Changing interval to 100ms...");
+    timer = 100;
+    setPollingInterval();
+  }
 }
 
 // Run that creepy thing!
 function execute() {
-    $.getJSON("http://localhost:{{port}}/", function (json) {
-        data = json;
+  $.getJSON("http://{{address}:{{port}}/", function (json) {
+    data = json;
+  })
+    .done(function () {
+      retryCounter = 0;
+      checkPollingInterval();
     })
-        .done(function () {
-            retryCounter = 0;
-            checkPollingInterval();
-        })
-        .fail(function () {
-            retryCounter++;
-            checkPollingInterval();
-        })
-        .always(function () {
-            updateStatus();
-            if (typeof executeOverlay === "function" && data !== undefined) {
-                // This function should be used inside the overlay html to be executed
-                // no idea if that makes sense to anybody...
-                executeOverlay();
-            }
-        });
+    .fail(function () {
+      retryCounter++;
+      checkPollingInterval();
+    })
+    .always(function () {
+      updateStatus();
+      if (typeof executeOverlay === "function" && data !== undefined) {
+        // This function should be used inside the overlay html to be executed
+        // no idea if that makes sense to anybody...
+        executeOverlay();
+      }
+    });
 }
 
 // Some helper functions
 function getReadableTime(time) {
-    var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : '';
-    var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : '';
-    var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : '';
+  var days = time.getUTCDate() - 1 > 0 ? time.getUTCDate() - 1 + "d:" : "";
+  var hours = time.getUTCHours() > 0 ? time.getUTCHours() + "h:" : "";
+  var minutes = time.getUTCMinutes() > 0 ? time.getUTCMinutes() + "m" : "";
 
-    return days + hours + minutes;
+  return days + hours + minutes;
 }
 
 function getRealMinutes(absMinutes) {
-    //if (data.CommonValues.Scale > 0 && absMinutes < 10)
-    //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
-    return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
+  //if (data.CommonValues.Scale > 0 && absMinutes < 10)
+  //    return "(" + Math.round(absMinutes / data.CommonValues.Scale).toFixed() + "m)";
+  return "(" + Math.round(absMinutes / 19).toFixed() + "m)";
 }
 
 // Set some variables and manipulate styles
 // Honestly! No clue how to do this in a proper way...
 function updateStatus() {
-    $('.on-job').css({
-        'visibility': ''
-    });
-    $('.train').css({
-        'visibility': ''
-    });
-    $('.ferry').css({
-        'visibility': ''
-    });
-    $('.game-paused').css({
-        'visibility': ''
-    });
-    $('.game-connected').css({
-        'visibility': ''
-    });
+  $(".on-job").css({
+    visibility: "",
+  });
+  $(".train").css({
+    visibility: "",
+  });
+  $(".ferry").css({
+    visibility: "",
+  });
+  $(".game-paused").css({
+    visibility: "",
+  });
+  $(".game-connected").css({
+    visibility: "",
+  });
 
-    if (data !== undefined && data.SpecialEventsValues.OnJob) {
-        onJob = true;
-    }
-    else {
-        $('.on-job').css({
-            'visibility': 'hidden'
-        });
-        onJob = false;
-    }
+  if (data !== undefined && data.SpecialEventsValues.OnJob) {
+    onJob = true;
+  } else {
+    $(".on-job").css({
+      visibility: "hidden",
+    });
+    onJob = false;
+  }
 
-    if (data !== undefined && data.SpecialEventsValues.Train) {
-        $('.train').css({
-            'visibility': 'hidden'
-        });
-        train = true;
-    }
-    else {
-        train = false;
-    }
+  if (data !== undefined && data.SpecialEventsValues.Train) {
+    $(".train").css({
+      visibility: "hidden",
+    });
+    train = true;
+  } else {
+    train = false;
+  }
 
-    if (data !== undefined && data.SpecialEventsValues.Ferry) {
-        $('.ferry').css({
-            'visibility': 'hidden'
-        });
-        ferry = true;
-    }
-    else {
-        ferry = false;
-    }
+  if (data !== undefined && data.SpecialEventsValues.Ferry) {
+    $(".ferry").css({
+      visibility: "hidden",
+    });
+    ferry = true;
+  } else {
+    ferry = false;
+  }
 
-    if (data !== undefined && data.Paused) {
-        $('.game-paused').css({
-            'visibility': 'hidden'
-        });
-        isGamePaused = true;
-    }
-    else {
-        isGamePaused = false;
-    }
+  if (data !== undefined && data.Paused) {
+    $(".game-paused").css({
+      visibility: "hidden",
+    });
+    isGamePaused = true;
+  } else {
+    isGamePaused = false;
+  }
 
-    if (data !== undefined && data.SdkActive && isServiceConnected) {
-        isGameConnected = true;
-    }
-    else {
-        $('.game-connected').css({
-            'visibility': 'hidden'
-        });
-        isGameConnected = false;
-    }
+  if (data !== undefined && data.SdkActive && isServiceConnected) {
+    isGameConnected = true;
+  } else {
+    $(".game-connected").css({
+      visibility: "hidden",
+    });
+    isGameConnected = false;
+  }
 }
