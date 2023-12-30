@@ -62,10 +62,9 @@ If you want to create e.g. a **dashboard for ETS2** instead of overlays it might
 
 ## Limitations
 - Must run on the same machine as your game
-- Can only serve http requests from localhost
 
 ## Customization
-- Change the used port in `TelemetryJsonService.exe.config` to what you like
+- Change the used port and address in `TelemetryJsonService.exe.config` to match your needs
 
 ## Using it in OBS
 - Add two browser sources to OBS for the job and the status telemetry overlays
