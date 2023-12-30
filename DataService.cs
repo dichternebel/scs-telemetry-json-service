@@ -16,6 +16,7 @@ namespace TelemetryJsonService
         private static HttpListener Listener;
         private static Task _mainLoop;
 
+        public static string Address { get; private set; }
         public static int Port { get; private set; }
 
         public static string JsonData { get; set; }
@@ -24,8 +25,9 @@ namespace TelemetryJsonService
         {
             if (_mainLoop != null && !_mainLoop.IsCompleted) return;
 
+            Address = ConfigurationManager.AppSettings["address"];
             Port = int.Parse(ConfigurationManager.AppSettings["port"]);
-            Listener = new HttpListener { Prefixes = { $"http://localhost:{Port}/" } };
+            Listener = new HttpListener { Prefixes = { $"http://{address}:{Port}/" } };
             _mainLoop = MainLoop();
         }
 
