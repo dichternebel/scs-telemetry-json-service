@@ -67,7 +67,7 @@ function checkPollingInterval() {
 
 // Run that creepy thing!
 function execute() {
-  $.getJSON("http://{{address}:{{port}}/", function (json) {
+  $.getJSON("http://{{address}}:{{port}}/", function (json) {
     data = json;
   })
     .done(function () {
