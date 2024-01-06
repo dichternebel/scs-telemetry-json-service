@@ -59,14 +59,15 @@ If you want to create e.g. a **dashboard for ETS2** instead of overlays it might
 - Download the [SCS-SDK-plugin v.1.12.1](https://github.com/RenCloud/scs-sdk-plugin/releases/tag/V.1.12.1) and copy the `Win64\scs-telemetry.dll` into `[...]\SteamLibrary\steamapps\common\Euro Truck Simulator 2\bin\win_x64\plugins`
 - Download this thing from the [Releases](https://github.com//dichternebel/scs-telemetry-json-service/releases/latest/) section and extract it to wherever you want
 - Start the executable and keep it running (it's located to the system tray then)
+- Please confirm the firewall exception if you want to access the service from other LAN devices
 
 ## Limitations
 - Must run on the same machine as your game
 
 ## Customization
-- Change the used port and address in `TelemetryJsonService.exe.config` to match your needs
+- Change the used port in `TelemetryJsonService.exe.config` to match your needs
 
-## Using it in OBS
+## Using overlays in OBS
 - Add two browser sources to OBS for the job and the status telemetry overlays
 - Change their width and height sizes filling your OBS resolution (not manually, go to the settings dialog of the browser source!)
 - change the source to **local file** and chose `[...]\scs-telemetry-json-service\overlays\overlay-job.html` and the other to `[...]\scs-telemetry-json-service\overlays\overlay-status.html`

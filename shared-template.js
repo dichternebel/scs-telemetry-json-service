@@ -41,33 +41,30 @@ function setPollingInterval() {
 
 // Slow down polling interval when connection is lost
 function checkPollingInterval() {
-  if (retryCounter === 10 && timer === 100) {
+  if (retryCounter === 10 && timer === 1000) {
     isServiceConnected = false;
-    console.log("Too many connection errors: changing interval to 1sec...");
-    timer = 1000;
-    setPollingInterval();
-  }
-  if (retryCounter === 19 && timer === 1000) {
-    console.log(
-      "Too many connection errors: changing interval to 10secs and hiding '.game-connected'...",
-    );
+    console.log("Too many connection errors: changing interval to 10sec and hiding '.game-connected'...");
     timer = 10000;
     setPollingInterval();
-
     $(".game-connected").css({
-      visibility: "hidden",
+      visibility: "hidden"
     });
-  } else if (retryCounter === 0 && timer > 100) {
+  }
+  if (retryCounter === 19 && timer === 10000) {
+    console.log("Too many connection errors: changing interval to 30secs...");
+    timer = 30000;
+    setPollingInterval();
+  } else if (retryCounter === 0 && timer > 1000) {
     isServiceConnected = true;
-    console.log("We are back to business! Changing interval to 100ms...");
-    timer = 100;
+    console.log("We are back to business! Changing interval to 1000ms...");
+    timer = 1000;
     setPollingInterval();
   }
 }
 
 // Run that creepy thing!
 function execute() {
-  $.getJSON("http://{{address}}:{{port}}/", function (json) {
+  $.getJSON("http://localhost:{{port}}/", function (json) {
     data = json;
   })
     .done(function () {
